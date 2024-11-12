@@ -6,7 +6,7 @@ public class ClubMinDto {
 
     private Long id;
     private String title;
-    private Integer year;
+    private Integer yearFoundation;
     private String imgUrl;
     private String shortDescription;
 
@@ -17,7 +17,7 @@ public class ClubMinDto {
     public ClubMinDto(Club entity) {
         this.id = entity.getId();
         this.title = entity.getTitle();
-        this.year = entity.getYear();
+        this.yearFoundation = entity.getYearFoundation();
         this.imgUrl = entity.getImgUrl();
         this.shortDescription = entity.getShortDescription();
     }
@@ -30,8 +30,8 @@ public class ClubMinDto {
         return title;
     }
 
-    public Integer getYear() {
-        return year;
+    public Integer getYearFoundation() {
+        return yearFoundation;
     }
 
     public String getImgUrl() {

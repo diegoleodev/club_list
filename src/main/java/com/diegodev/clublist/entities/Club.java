@@ -13,7 +13,7 @@ public class Club {
     private Long id;
     private String title;
     @Column(name = "club_year")
-    private Integer year;
+    private Integer yearFoundation;
     private String genre;
     private String stadium;
     private Double score;
@@ -29,7 +29,7 @@ public class Club {
     public Club(Long id, String title, Integer year, String genre, String stadium, Double score, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
-        this.year = year;
+        this.yearFoundation = year;
         this.genre = genre;
         this.stadium = stadium;
         this.score = score;
@@ -54,12 +54,12 @@ public class Club {
         this.title = title;
     }
 
-    public Integer getYear() {
-        return year;
+    public Integer getYearFoundation() {
+        return yearFoundation;
     }
 
-    public void setYear(Integer year) {
-        this.year = year;
+    public void setYearFoundation(Integer year) {
+        this.yearFoundation = year;
     }
 
     public String getGenre() {
