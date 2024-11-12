@@ -1,3 +1,10 @@
+INSERT INTO tb_club_list (name) VALUES ('Clubes Espanhois');
+INSERT INTO tb_club_list (name) VALUES ('Clubes Ingleses');
+INSERT INTO tb_club_list (name) VALUES ('Clubes Franceses');
+INSERT INTO tb_club_list (name) VALUES ('Clubes Italianos');
+INSERT INTO tb_club_list (name) VALUES ('Clubes Alemães');
+
+
 INSERT INTO tb_club (title, score, club_year, genre, stadium, img_url, short_description, long_description) VALUES ('FC Barcelona', 4.8, 1899, 'Football, La Liga', 'Camp Nou, Europe', 'https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg', 'Futebol ofensivo e tradição histórica na Europa.', 'O FC Barcelona é conhecido por seu estilo de jogo baseado em passes curtos e técnicos, sua academia de base La Masia e um dos maiores rivais do Real Madrid. Com jogadores lendários como Messi, Xavi e Iniesta, o clube tem uma rica história de conquistas na La Liga e na Champions League.');
 INSERT INTO tb_club (title, score, club_year, genre, stadium, img_url, short_description, long_description) VALUES ('Real Madrid CF', 4.9, 1902, 'Football, La Liga', 'Santiago Bernabéu, Europe', 'https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg', 'O clube com mais títulos da Champions League.', 'O Real Madrid é amplamente reconhecido por seu sucesso nas competições europeias, tendo conquistado várias edições da UEFA Champions League. Jogadores icônicos como Cristiano Ronaldo, Zidane e Raul são parte da história do clube, que simboliza grandeza e tradição no futebol mundial.');
 INSERT INTO tb_club (title, score, club_year, genre, stadium, img_url, short_description, long_description) VALUES ('Manchester United', 4.7, 1878, 'Football, Premier League', 'Old Trafford, Europe', 'https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg', 'Uma potência do futebol inglês.', 'O Manchester United é um dos clubes mais bem-sucedidos e populares do mundo, com uma base de fãs global. Durante a era de Sir Alex Ferguson, o clube dominou a Premier League e conquistou a UEFA Champions League. Giggs, Scholes e Cantona são alguns dos ícones da equipe.');
@@ -8,3 +15,11 @@ INSERT INTO tb_club (title, score, club_year, genre, stadium, img_url, short_des
 INSERT INTO tb_club (title, score, club_year, genre, stadium, img_url, short_description, long_description) VALUES ('AC Milan', 4.7, 1899, 'Football, Serie A', 'San Siro, Europe', 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg', 'Um dos clubes mais vitoriosos da Itália.', 'O AC Milan é conhecido por sua tradição de sucesso na Europa, com sete títulos da Champions League. Jogadores como Maldini, Kaká e Shevchenko são ícones que ajudaram o clube a consolidar sua posição entre os grandes do futebol europeu.');
 INSERT INTO tb_club (title, score, club_year, genre, stadium, img_url, short_description, long_description) VALUES ('Arsenal FC', 4.6, 1886, 'Football, Premier League', 'Emirates Stadium, Europe', 'https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg', 'Um dos clubes mais tradicionais da Inglaterra.', 'O Arsenal é famoso por sua filosofia de jogo ofensivo e seu histórico de títulos, incluindo a famosa temporada "Invincibles" de 2003-04, onde se sagrou campeão da Premier League de forma invicta. Ícones como Thierry Henry, Bergkamp e Vieira fazem parte da história do clube.');
 INSERT INTO tb_club (title, score, club_year, genre, stadium, img_url, short_description, long_description) VALUES ('Manchester City FC', 4.7, 1880, 'Football, Premier League', 'Etihad Stadium, Europe', 'https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg', 'Uma força emergente do futebol inglês.', 'O Manchester City tem se destacado como uma das potências do futebol europeu, especialmente desde os investimentos do início dos anos 2000. Sob o comando de Pep Guardiola, o clube alcançou altos níveis de sucesso, incluindo múltiplos títulos da Premier League. Jogadores como Sergio Agüero, David Silva e De Bruyne são símbolos recentes do clube.');
+
+
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (1, 1, 0);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (1, 2, 1);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (2, 3, 2);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (5, 4, 3);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (4, 5, 4);
+
