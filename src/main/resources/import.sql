@@ -19,7 +19,13 @@ INSERT INTO tb_club (title, score, club_year, genre, stadium, img_url, short_des
 
 INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (1, 1, 0);
 INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (1, 2, 1);
-INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (2, 3, 2);
-INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (5, 4, 3);
-INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (4, 5, 4);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (2, 3, 0);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (5, 4, 0);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (4, 5, 0);
+
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (2, 6, 1);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (3, 7, 0);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (4, 8, 1);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (2, 9, 3);
+INSERT INTO tb_belonging (club_list_id, club_id, position) VALUES (2, 10, 4);
 

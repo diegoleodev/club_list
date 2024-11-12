@@ -1,6 +1,7 @@
 package com.diegodev.clublist.dtos;
 
 import com.diegodev.clublist.entities.Club;
+import com.diegodev.clublist.projections.ClubMinProjection;
 
 public class ClubMinDto {
 
@@ -20,6 +21,14 @@ public class ClubMinDto {
         this.yearFoundation = entity.getYearFoundation();
         this.imgUrl = entity.getImgUrl();
         this.shortDescription = entity.getShortDescription();
+    }
+
+    public ClubMinDto(ClubMinProjection projection) {
+        this.id = projection.getId();
+        this.title = projection.getTitle();
+        this.yearFoundation = projection.getYearFoundation();
+        this.imgUrl = projection.getImgUrl();
+        this.shortDescription = projection.getShortDescription();
     }
 
     public Long getId() {

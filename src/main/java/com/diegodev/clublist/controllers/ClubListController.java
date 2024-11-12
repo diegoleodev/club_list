@@ -20,11 +20,18 @@ public class ClubListController {
     @Autowired
     private ClubListService clubListService;
 
+    @Autowired
+    private ClubService clubService;
+
     @GetMapping
     public List<ClubListDTO> findAll(){
         List<ClubListDTO> result = clubListService.findAll();
         return result;
     }
-
+    @GetMapping(value = "/{listId}/clubs")
+    public List<ClubMinDto> findByList(@PathVariable Long listId){
+        List<ClubMinDto> result = clubService.findByList(listId);
+        return result;
+    }
 
 }

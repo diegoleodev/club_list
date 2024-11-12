@@ -3,6 +3,7 @@ package com.diegodev.clublist.services;
 import com.diegodev.clublist.dtos.ClubDTO;
 import com.diegodev.clublist.dtos.ClubMinDto;
 import com.diegodev.clublist.entities.Club;
+import com.diegodev.clublist.projections.ClubMinProjection;
 import com.diegodev.clublist.repositories.ClubRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,6 +28,13 @@ public class ClubService {
     public ClubDTO findById(Long id){
         Club result = clubRespository.findById(id).get();
         ClubDTO dto = new ClubDTO(result);
+        return dto;
+    }
+
+    @Transactional(readOnly = true)
+    public List<ClubMinDto> findByList(Long listId){
+        List<ClubMinProjection> result = clubRespository.searchByList(listId);
+        List<ClubMinDto> dto = result.stream().map(x -> new ClubMinDto(x)).toList();
         return dto;
     }
 }
